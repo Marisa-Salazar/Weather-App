@@ -27,17 +27,20 @@ h1 {
 
 h2 {
   margin-top: 20px;
+  margin-left: 22px;
 }
 .weatherDate {
   list-style: none;
   text-align: right;
   position: relative;
   margin-top: -45px;
+  text-transform: capitalize;
 }
 
 .localTemp {
   font-weight: bold;
   font-size: 40px;
+  margin-left: 22px;
 }
 
 .percentages {
