@@ -23,10 +23,11 @@ h1 {
 
 .enterCity {
   margin-left: 20px;
+  margin-bottom: 13px;
 }
 
 h2 {
-  margin-top: 20px;
+  margin-top: 37px;
   margin-left: 22px;
 }
 .weatherDate {
@@ -47,7 +48,7 @@ h2 {
   list-style: none;
   position: relative;
   margin-top: -60px;
-  margin-left: 140px;
+  margin-left: 1px;
 }
 
 .containerDays {
