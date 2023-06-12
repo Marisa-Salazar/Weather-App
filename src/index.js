@@ -88,26 +88,28 @@ let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 /// unit conversion
-function displayCelciusTemperature(event) {
+
+function displayCelsiusTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
   fahrenheitLink.classList.remove("active");
-  celciusLink.classList.add("active");
-  let celciusTemperature = (fahrenheitTemerature - 32) / 1.8;
-  temperatureElement.innerHTML = Math.round(celciusTemperature);
+  celsiusLink.classList.add("active");
+  let celsiusTemperature = (fahrenheitTemerature - 32) / 1.8;
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
   fahrenheitLink.classList.add("active");
-  celciusLink.classList.remove("active");
+  celsiusLink.classList.remove("active");
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(fahrenheitTemerature);
 }
+
 let fahrenheitTemerature = null;
 
-let celciusLink = document.querySelector("#celcius-Link");
-celciusLink.addEventListener("click", displayCelciusTemperature);
+let celsiusLink = document.querySelector("#celsius-Link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
-let fahrenheitLink = document.querySelector("fahrenheit-Link");
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
