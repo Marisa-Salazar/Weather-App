@@ -41,6 +41,13 @@ h2 {
 .localTemp {
   font-weight: bold;
   font-size: 47px;
+  position: relative;
+  top: -5px;
+}
+
+.icon {
+  position: relative;
+  top: -15px;
 }
 
 .units {
