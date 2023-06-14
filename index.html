@@ -11,66 +11,56 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/ffded63a3c.js" crossorigin="anonymous"></script>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ffded63a3c.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="content">
       <h1>Weather App</h1>
-    </br>
-    <form class="enterCity" id="search-form">
-      <input type="text" placeholder="Enter a City" id="enter-city"/>
-      <input class="Search" type="submit" value="Search"/>
-      <input type="button" class="currentLocation" id="current-location-button" value="Current Location"/>
-    </form>
-      <h2 id="city"> Tucson </h2>
-      
+
+      <form class="enterCity" id="search-form">
+        <input type="text" placeholder="Enter a City" id="enter-city" />
+        <input class="Search" type="submit" value="Search" />
+        <input
+          type="button"
+          class="currentLocation"
+          id="current-location-button"
+          value="Current Location"
+        />
+      </form>
+      <h2 id="city">Tucson</h2>
+
       <ul class="weatherDate">
-        <li> Weather </li>
+        <li>Weather</li>
         <li id="date"></li>
-        <li id="description"> Sunny </li>
+        <li id="description">Sunny</li>
       </ul>
       <div class="weather-temperature">
-      <img src="" alt="icon" id="weatherIcon" class="icon" />
-      <strong class="localTemp" id="temperature">  71 </strong>
-      <span class="units"><a href="#" id="fahrenheit-link" class="active">°F</a> | <a href="#" id="celsius-Link">°C</a> </span> 
+        <img src="" alt="icon" id="weatherIcon" class="icon" />
+        <strong class="localTemp" id="temperature"> 71 </strong>
+        <span class="units"
+          ><a href="#" id="fahrenheit-link" class="active">°F</a> |
+          <a href="#" id="celsius-Link">°C</a>
+        </span>
       </div>
       <ul class="percentages">
         <li>Humidity: <span id="humidity"></span>%</li>
         <li>Wind: <span id="wind"></span>mph</li>
         <li>Precipitation: <span id="precipitation"></span>%</li>
       </ul>
-          <div class="containerDays">
-              <div class="row">
-                <div class="col">Fri</div>
-                <div class="col">Sat</div>
-                <div class="col">Sun</div>
-                <div class="col">Mon</div>
-                <div class="col">Tues</div>
-              </div>
-              </div>
-              <div class=" rowEmoji">
-                <div class="row">
-                <div class="col"> ☀️ </div>
-                <div class="col "> ☀️ </div>
-                <div class="col"> 🌤 </div>
-                <div class="col"> 🌤 </div>
-                <div class="col"> ☀️ </div>
-              </div>
-
-              <div class="row low-high">
-                  <div class="col text-center"> <strong> 90°</strong> 58°</div>
-                  <div class="col text-center"> <strong> 92°</strong> 59°</div>
-                  <div class="col text-center"><strong> 93°</strong> 59°</div>
-                  <div class="col text-center"><strong> 88°</strong> 57°</div>
-                  <div class="col text-center"><strong>88°</strong> 56°</div>
-              </div>
-              </div>
-            </div>
-     <a href="https://github.com/Marisa-Salazar/Weather-App">See more on GitHub</a>
+      <div class="weather-forecast" id="forecast"></div>
+    </div>
+    <a href="https://github.com/Marisa-Salazar/Weather-App"
+      >See more on GitHub</a
+    >
     <script src="src/index.js"></script>
   </body>
 </html>
