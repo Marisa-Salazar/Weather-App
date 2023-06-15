@@ -57,6 +57,7 @@ function displayWeatherCondition(response) {
   document.querySelector("#precipitation").innerHTML = rain;
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
+  getForecast(response.data.coord);
 }
 
 // API City Input //
@@ -173,6 +174,6 @@ function displayForecast(response) {
 function getForecast(coordinates) {
   console.log(coordinates);
   let apiKey = "546c62b945b376181dc50519821f4ed6";
-  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${apiKey}&units=metric`;
+  let apiUrl = `http://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}`;
   axios.get(apiUrl).then(displayForecast);
 }
