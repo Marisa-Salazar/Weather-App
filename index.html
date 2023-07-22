@@ -26,9 +26,14 @@
     <div class="content">
       <h1>Weather App</h1>
 
-      <form class="enterCity" id="search-form">
-        <input type="text" placeholder="Enter a City" id="enter-city" />
-        <input class="Search" type="submit" value="Search" />
+      <form class="enterSearchCurrent" id="search-form">
+        <input
+          type="text"
+          placeholder="Enter City..."
+          id="enter-city"
+          class="enterCity"
+        />
+        <input class="search" type="submit" value="Search" />
         <input
           type="button"
           class="currentLocation"
@@ -36,16 +41,18 @@
           value="Current Location"
         />
       </form>
-      <h2 id="city">Tucson</h2>
+      <h2 id="city"></h2>
 
       <ul class="weatherDate">
-        <li>Weather</li>
-        <li id="date"></li>
-        <li id="description">Sunny</li>
+        <li>
+          last updated:
+          <span id="date"></span>
+        </li>
+        <li id="description"></li>
       </ul>
       <div class="weather-temperature">
-        <img src="" alt="icon" id="weatherIcon" class="icon" />
-        <strong class="localTemp" id="temperature"> 71 </strong>
+        <img src="" id="weatherIcon" class="icon" />
+        <strong class="localTemp" id="temperature"></strong>
         <span class="units"
           ><a href="#" id="fahrenheit-link" class="active">°F</a>
         </span>
@@ -57,9 +64,10 @@
       </ul>
       <div class="weather-forecast" id="forecast"></div>
     </div>
-    <a href="https://github.com/Marisa-Salazar/Weather-App"
-      >See more on GitHub</a
-    >
-    <script src="src/index.js"></script>
+    <p>
+      Coded by <strong>Marisa Salazar</strong> and is open sourced on
+      <a href="https://github.com/Marisa-Salazar/Weather-App"> GitHub</a>
+      <script src="src/index.js"></script>
+    </p>
   </body>
 </html>

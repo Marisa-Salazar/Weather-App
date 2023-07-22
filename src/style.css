@@ -6,14 +6,17 @@ body {
   );
   display: block;
   margin: 8px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .content {
   max-width: 700px;
-  margin: 60px auto;
+  margin: 30px auto;
   padding: 40px 20px;
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.952);
+  font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
 }
 
 h1 {
@@ -21,21 +24,58 @@ h1 {
   text-align: center;
 }
 
-.enterCity {
+.enterSearchCurrent {
   margin-left: 20px;
   margin-bottom: 13px;
+  display: block;
+}
+.enterCity {
+  background: #e4f5f5;
+  color: #a4adb9;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  height: 50px;
+  padding: 15px 8px;
+  border-radius: 6px;
+  margin-top: 3px;
+  width: 62%;
+}
+
+.search {
+  background: #69b6b6;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  height: 50px;
+  padding: 15px 8px;
+  border-radius: 6px;
+  color: white;
+}
+
+.currentLocation {
+  background: #69b6b6;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  height: 50px;
+  padding: 15px 8px;
+  border-radius: 6px;
+  color: white;
 }
 
 h2 {
   margin-top: 37px;
   margin-left: 22px;
 }
+
 .weatherDate {
   list-style: none;
-  text-align: right;
+  text-align: left;
   position: relative;
-  margin-top: -45px;
   text-transform: capitalize;
+  margin-left: -9px;
+  margin-top: -9px;
 }
 
 .localTemp {
@@ -70,7 +110,7 @@ h2 {
   list-style: none;
   position: relative;
   margin-top: -100px;
-  margin-left: 200px;
+  margin-left: 300px;
 }
 
 .containerDays {
@@ -86,7 +126,7 @@ h2 {
   text-align: center;
 }
 .weather-forecast {
-  margin-top: 20px;
+  margin-top: 25px;
   text-align: center;
   color: black;
 }
@@ -101,4 +141,9 @@ h2 {
 
 .weather-forecast-temeratures {
   font-size: 13px;
+}
+
+p {
+  text-align: center;
+  margin-top: -15px;
 }
