@@ -148,3 +148,5 @@ function getForecast(coordinates) {
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.lon}&lat=${coordinates.lat}&key=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayForecast);
 }
+
+searchCity("New York");
